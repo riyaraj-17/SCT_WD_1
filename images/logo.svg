@@ -1,19 +1,36 @@
 <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="0" width="500" height="300" fill="none"/>
   
-  <!-- Flame icon -->
-  <g transform="translate(250, 140)">
-    <path d="M0,60 C-25,35 -35,0 -15,-30 C-5,-45 -2,-60 0,-80 C2,-60 5,-45 15,-30 C35,0 25,35 0,60Z" stroke="#e85d3a" stroke-width="2.5" fill="none" opacity="0.7"/>
-    <path d="M0,50 C-15,30 -22,5 -10,-20 C-3,-32 0,-45 0,-60 C0,-45 3,-32 10,-20 C22,5 15,30 0,50Z" stroke="#f5b87a" stroke-width="1.5" fill="none" opacity="0.4"/>
-    <!-- Embers -->
-    <circle cx="-8" cy="-40" r="2" fill="#e85d3a" opacity="0.3"/>
-    <circle cx="5" cy="-35" r="1.5" fill="#f5b87a" opacity="0.2"/>
-    <circle cx="-3" cy="-55" r="1" fill="#e85d3a" opacity="0.2"/>
+  <!-- Background heat waves -->
+  <g opacity="0.08">
+    <path d="M0,150 Q100,100 200,150 T400,150 T500,150" stroke="#e85d3a" stroke-width="1" fill="none"/>
+    <path d="M0,180 Q100,130 200,180 T400,180 T500,180" stroke="#f5b87a" stroke-width="1" fill="none"/>
+    <path d="M0,120 Q100,70 200,120 T400,120 T500,120" stroke="#e85d3a" stroke-width="1" fill="none"/>
   </g>
   
-  <!-- Brand name -->
-  <text x="250" y="230" text-anchor="middle" font-family="'Playfair Display', serif" font-size="28" fill="rgba(240,232,224,0.15)" letter-spacing="6">BASIL &amp; EMBER</text>
+  <!-- Flame shape -->
+  <path d="M250,220 
+           C230,200 215,170 230,140 
+           C240,120 245,105 250,80 
+           C255,105 260,120 270,140 
+           C285,170 270,200 250,220Z" 
+        stroke="#e85d3a" stroke-width="2" fill="none" opacity="0.6"/>
   
-  <!-- Subtitle -->
-  <text x="250" y="252" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="rgba(220,200,180,0.08)" letter-spacing="3">WOOD-FIRED · INDIAN GRILL</text>
+  <path d="M250,210 
+           C238,195 228,175 238,155 
+           C245,140 248,130 250,115 
+           C252,130 255,140 262,155 
+           C272,175 262,195 250,210Z" 
+        stroke="#f5b87a" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- Embers floating up -->
+  <circle cx="230" cy="170" r="2" fill="#e85d3a" opacity="0.3"/>
+  <circle cx="270" cy="160" r="1.5" fill="#f5b87a" opacity="0.25"/>
+  <circle cx="250" cy="135" r="1.5" fill="#e85d3a" opacity="0.2"/>
+  <circle cx="240" cy="150" r="1" fill="#f5b87a" opacity="0.2"/>
+  <circle cx="260" cy="140" r="1" fill="#e85d3a" opacity="0.15"/>
+  
+  <!-- Heat ripple lines -->
+  <path d="M190,200 C210,190 230,195 250,190 C270,185 290,190 310,200" stroke="rgba(245,184,122,0.1)" stroke-width="1" fill="none"/>
+  <path d="M200,185 C220,175 240,180 260,175 C280,170 300,175 320,185" stroke="rgba(245,184,122,0.08)" stroke-width="1" fill="none"/>
 </svg>
