@@ -1,5 +1,5 @@
-<svg viewBox="0 0 500 300" xmlns="http://w3.org">
-  <rect x="0" y="0" width="500" height="300" fill="#111111"/>
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="500" height="300" fill="none"/>
   
   <!-- Flame icon -->
   <g transform="translate(250, 140)">
@@ -12,8 +12,8 @@
   </g>
   
   <!-- Brand name -->
-  <text x="250" y="230" text-anchor="middle" font-family="'Playfair Display', serif" font-size="28" fill="#f0e8e0" letter-spacing="6">BASIL &amp; EMBER</text>
+  <text x="250" y="230" text-anchor="middle" font-family="'Playfair Display', serif" font-size="28" fill="rgba(240,232,224,0.15)" letter-spacing="6">BASIL &amp; EMBER</text>
   
   <!-- Subtitle -->
-  <text x="250" y="252" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#dc9664" letter-spacing="3">WOOD-FIRED · INDIAN GRILL</text>
+  <text x="250" y="252" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="rgba(220,200,180,0.08)" letter-spacing="3">WOOD-FIRED · INDIAN GRILL</text>
 </svg>
