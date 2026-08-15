@@ -1,4 +1,4 @@
-Basil & Ember - Responsive Restaurant Landing Page
+## Basil & Ember - Responsive Restaurant Landing Page
 
 A responsive restaurant landing page for Basil & Ember, a fictional wood-fired Indian grill restaurant, built for **Task 01: Interactive Navigation Menu** (SkillCraft Technology).
 
