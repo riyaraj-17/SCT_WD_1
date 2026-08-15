@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basil & Ember — Indian Grill</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== FIXED NAVIGATION ====== -->
+    <nav class="nav" id="siteNav">
+        <a href="#top" class="nav-brand">
+            <span class="flame"></span>
+            Basil &amp; Ember
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#top" class="nav-link active">Home</a></li>
+            <li><a href="#starters" class="nav-link">Starters</a></li>
+            <li><a href="#mains" class="nav-link">Mains</a></li>
+            <li><a href="#desserts" class="nav-link">Desserts</a></li>
+            <li><a href="#drinks" class="nav-link">Drinks</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-cta" id="reserveBtn">Reserve a Table</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero" id="top">
+        <div class="hero-badge"><span class="dash"></span> EST. 2026 · PUNE</div>
+        <h1>Fire &amp; <em>Flavor</em></h1>
+        <p>Wood-fired Indian cuisine with a modern twist. Every dish tells a story of smoke, spice, and seasonal ingredients.</p>
+        <div class="hero-actions">
+            <a href="#mains" class="btn btn-primary">View the Menu</a>
+            <a href="#contact" class="btn btn-ghost" id="heroReserveBtn">Book a Table</a>
+        </div>
+        
+        <!-- Hero SVG Image - Brand Logo -->
+        <svg class="hero-image" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="500" height="300" fill="none"/>
+            
+            <!-- Flame icon -->
+            <g transform="translate(250, 140)">
+                <path d="M0,60 C-25,35 -35,0 -15,-30 C-5,-45 -2,-60 0,-80 C2,-60 5,-45 15,-30 C35,0 25,35 0,60Z" stroke="#e85d3a" stroke-width="2.5" fill="none" opacity="0.7"/>
+                <path d="M0,50 C-15,30 -22,5 -10,-20 C-3,-32 0,-45 0,-60 C0,-45 3,-32 10,-20 C22,5 15,30 0,50Z" stroke="#f5b87a" stroke-width="1.5" fill="none" opacity="0.4"/>
+                <!-- Embers -->
+                <circle cx="-8" cy="-40" r="2" fill="#e85d3a" opacity="0.3"/>
+                <circle cx="5" cy="-35" r="1.5" fill="#f5b87a" opacity="0.2"/>
+                <circle cx="-3" cy="-55" r="1" fill="#e85d3a" opacity="0.2"/>
+            </g>
+            
+            <!-- Brand name -->
+            <text x="250" y="230" text-anchor="middle" font-family="'Playfair Display', serif" font-size="28" fill="rgba(240,232,224,0.15)" letter-spacing="6">BASIL &amp; EMBER</text>
+            
+            <!-- Subtitle -->
+            <text x="250" y="252" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="rgba(220,200,180,0.08)" letter-spacing="3">WOOD-FIRED · INDIAN GRILL</text>
+        </svg>
+    </section>
+
+    <!-- ====== STARTERS ====== -->
+    <section id="starters">
+        <span class="eyebrow">To Begin</span>
+        <h2>Starters</h2>
+        <p class="section-intro">Light, vibrant, and packed with flavor — the perfect way to start your meal.</p>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <span class="tag">★ Signature</span>
+                <h3>Tandoori Prawns</h3>
+                <p>Smoked paprika, garlic butter, charred lemon</p>
+                <span class="price">₹425</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Wood-Fired</span>
+                <h3>Paneer Tikka</h3>
+                <p>Marinated cottage cheese, bell peppers, mint chutney</p>
+                <span class="price">₹345</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Fresh</span>
+                <h3>Basil &amp; Burrata</h3>
+                <p>Heirloom tomatoes, aged balsamic, garden basil</p>
+                <span class="price">₹385</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Spicy</span>
+                <h3>Chili-Garlic Mushroom</h3>
+                <p>Lemon butter, fresh herbs, grilled bread</p>
+                <span class="price">₹295</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MAINS ====== -->
+    <section id="mains">
+        <span class="eyebrow">The Main Event</span>
+        <h2>Mains</h2>
+        <p class="section-intro">Wood-fired perfection. Each dish is cooked over live fire for that unmistakable smoky depth.</p>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <span class="tag">★ House Special</span>
+                <h3>Ember-Grilled Lamb</h3>
+                <p>Herb butter, smoked salt, charred vegetables</p>
+                <span class="price">₹745</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Wood-Fired</span>
+                <h3>Whole Roasted Pomfret</h3>
+                <p>Lemon, fennel, olives, white wine sauce</p>
+                <span class="price">₹695</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Vegetarian</span>
+                <h3>Grilled Mushroom &amp; Polenta</h3>
+                <p>Wild mushrooms, creamy polenta, truffle oil</p>
+                <span class="price">₹525</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Spicy</span>
+                <h3>Chicken Tikka Masala</h3>
+                <p>North Indian spices, creamy tomato gravy, rice</p>
+                <span class="price">₹595</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== DESSERTS ====== -->
+    <section id="desserts">
+        <span class="eyebrow">Sweet Finale</span>
+        <h2>Desserts</h2>
+        <p class="section-intro">The perfect end to your fire-cooked feast.</p>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <span class="tag">★ Signature</span>
+                <h3>Burnt Honey Ice Cream</h3>
+                <p>Caramelized honey, sea salt, olive oil</p>
+                <span class="price">₹285</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Wood-Fired</span>
+                <h3>Grilled Peaches</h3>
+                <p>Mascarpone, basil, honey glaze</p>
+                <span class="price">₹295</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Classic</span>
+                <h3>Dark Chocolate Lava Cake</h3>
+                <p>Vanilla bean ice cream, caramel sauce</p>
+                <span class="price">₹325</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== DRINKS ====== -->
+    <section id="drinks">
+        <span class="eyebrow">To Drink</span>
+        <h2>Drinks</h2>
+        <p class="section-intro">Cocktails, wine, and zero-proof selections to complement your meal.</p>
+
+        <div class="menu-grid drinks-grid">
+            <div class="menu-item">
+                <span class="tag">Cocktail</span>
+                <h3>Basil Smash</h3>
+                <p>Gin, fresh basil, lemon, honey</p>
+                <span class="price">₹395</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Cocktail</span>
+                <h3>Smoked Old Fashioned</h3>
+                <p>Bourbon, maple, bitters, orange</p>
+                <span class="price">₹445</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Zero-Proof</span>
+                <h3>Ember &amp; Spice</h3>
+                <p>Smoked tea, cinnamon, orange, honey</p>
+                <span class="price">₹265</span>
+            </div>
+            <div class="menu-item">
+                <span class="tag">Wine</span>
+                <h3>House Red / White</h3>
+                <p>Organic, sustainably sourced</p>
+                <span class="price">₹325</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT / RESERVATIONS ====== -->
+    <section id="contact" class="cta-band">
+        <span class="eyebrow">Reservations</span>
+        <h2>Join us at the fire.</h2>
+        <p class="section-intro" style="margin-left:auto;margin-right:auto;">Reserve your table for an evening of wood-fired flavor and warm hospitality.</p>
+        <div class="contact-info">
+            <a href="mailto:hello@basilember.in" class="btn btn-primary">📧 hello@basilember.in</a>
+            <a href="tel:+919876543210" class="btn btn-ghost">📞 +91 98765 43210</a>
+        </div>
+        <p class="hours">Open Tue–Sun · 6:00 PM – 12:00 AM</p>
+        <p class="hours" style="margin-top:8px; font-size:0.75rem; color:var(--ink-dim); opacity:0.6;">
+            ✦ Call or email us to make a reservation ✦
+        </p>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <span>© 2026 Basil &amp; Ember · Pune</span>
+        <span class="mono">WOOD-FIRED · FLAVOR-DRIVEN</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
